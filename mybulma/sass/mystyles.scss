@@ -1,0 +1,33 @@
+@charset "utf-8";
+
+$pink: #f9cde6;
+
+$navbar-background-color: #71c5e9;
+$navbar-item-color: black;
+$navbar-item-hover-background-color: $pink;
+$navbar-dropdown-background-color: #71c5e9;
+$navbar-dropdown-item-hover-background-color: $pink;
+$navbar-dropdown-arrow: $pink;
+$navbar-item-hover-color: black;
+$navbar-dropdown-item-hover-color: black;
+$navbar-dropdown-arrow: black;
+
+$title-color: black;
+$subtitle-color: black;
+
+@import "../node_modules/bulma/sass/base/_all.sass";
+@import "../node_modules/bulma/sass/components/navbar.sass";
+@import "../node_modules/bulma/sass/elements/box.sass";
+@import "../node_modules/bulma/sass/elements/button.sass";
+@import "../node_modules/bulma/sass/elements/container.sass";
+@import "../node_modules/bulma/sass/elements/content.sass";
+@import "../node_modules/bulma/sass/elements/image.sass";
+@import "../node_modules/bulma/sass/elements/icon.sass";
+@import "../node_modules/bulma/sass/elements/title.sass";
+@import "../node_modules/bulma/sass/grid/_all.sass";
+@import "../node_modules/bulma/sass/helpers/color.sass";
+@import "../node_modules/bulma/sass/helpers/flexbox.sass";
+@import "../node_modules/bulma/sass/helpers/typography.sass";
+@import "../node_modules/bulma/sass/helpers/spacing.sass";
+@import "../node_modules/bulma/sass/layout/hero.sass";
+@import "../node_modules/bulma/sass/utilities/_all.sass";
