@@ -15,3 +15,5 @@ Almost all `mybulma` related stuff is licensed under the `MIT` License
 ## Note
 This isn't legal advice, please consider consulting a lawyer and see the full license for all the details.<br>
 The TL;DR legalese come from [choosealicense.com](https://choosealicense.com/) under [CC-BY-3.0](https://creativecommons.org/licenses/by/3.0/)
+
+##### *Retrieved date: March 8th, 2023*
