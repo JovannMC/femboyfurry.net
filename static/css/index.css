@@ -10,8 +10,8 @@
 body {
     min-height: 100vh;
     background: linear-gradient(-45deg, #71d9e9, #B5D3EB, #f9cded);
-	background-size: 400% 400%;
-	animation: gradient 9s ease infinite;
+    background-size: 400% 400%;
+    animation: gradient 9s ease infinite;
 }
 
 img {
@@ -31,13 +31,15 @@ img {
 }
 
 @keyframes gradient {
-	0% {
-		background-position: 0% 50%;
-	}
-	50% {
-		background-position: 100% 50%;
-	}
-	100% {
-		background-position: 0% 50%;
-	}
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
 }
