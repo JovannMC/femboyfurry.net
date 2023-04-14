@@ -30,6 +30,11 @@ img {
     color: #071D7B;
 }
 
+.no-border {
+    border-left: none !important;
+    border-right: none !important;
+}
+
 @keyframes gradient {
     0% {
         background-position: 0% 50%;
