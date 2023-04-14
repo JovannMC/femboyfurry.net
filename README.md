@@ -1,4 +1,5 @@
 # femboyfurry.net
+#### A redesign of the website is coming soon.<br>
 Welcome to this website's repository, hosted at https://femboyfurry.net!<br>
 Speaking of which, you should head to https://jovannmc.femboyfurry.net also - my personal website!.<br>
 Here you can explore the code and roast my trash code!<br>
