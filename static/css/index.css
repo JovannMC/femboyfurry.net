@@ -49,3 +49,33 @@ body {
         background-position: 0% 50%;
     }
 }
+
+.container {
+    width: 100vh;
+    height: 100vh;
+    display: flex;
+    align-items: center; /* Centers vertically */
+    justify-content: center; /* Centers horizontally */
+  }
+
+.carousel {
+    background-color: rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+}
+
+.carousel img {
+    max-width: auto;
+    max-height: 25vh;
+    object-fit: cover;
+    margin: 1.5rem auto 1.5rem auto;
+}
+
+.slick-slide {
+    padding: 0 1rem;
+}
+
+.slick-track {
+    display: flex;
+}
+  
+  

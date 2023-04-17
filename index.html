@@ -8,6 +8,12 @@
     <title>femboyfurry.net</title>
 
     <link rel="stylesheet" href="/static/css/index.css">
+    <link rel="stylesheet" href="/static/css/tailwind.css">
+    <link rel="stylesheet" type="text/css" href="./node_modules/slick-carousel/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="./node_modules/slick-carousel/slick/slick-theme.css"/>
+    <script src="./node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="./node_modules/slick-carousel/slick/slick.min.js"></script>
+
     <link rel="icon" type="image/x-icon" href="/static/images/favicon.ico">
 
     <!-- SEO -->
@@ -25,6 +31,74 @@
 </head>
 
 <body>
+    <div class="container">
+        <div class="carousel">
+            <div class="column-1">
+              <img src="/static/images/site.png">
+              <img src="/static/images/site3.png">
+              <img src="/static/images/1.png">
+            </div>
+            <div class="column-2">
+              <img src="/static/images/site2.png">
+              <img src="/static/images/discord.png">
+              <img src="/static/images/gif.png">
+            </div>
+            <div class="column-3">
+              <img src="/static/images/window xp.png">
+              <img src="/static/images/bonus real.png">
+              <img src="/static/images/furry femboyfriend.png">
+            </div>
+          </div>
+    </div>
+    
+    <script>
+    $(document).ready(function(){
+            $('.carousel').slick({
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            arrows: false,
+            dots: false,
+            centerMode: true,
+            centerPadding: '0',
+            variableWidth: true,
+            speed: 3000,
+            autoplay: true,
+            autoplaySpeed: 0,
+            cssEase: 'linear',
+            pauseOnFocus: false,
+            pauseOnHover: false,
+            useTransform: true,
+            infinite: true,
+            initialSlide: 0,
+            swipe: false,
+            draggable: false,
+            responsive: [
+            {
+                breakpoint: 768,
+                settings: {
+                  slidesToShow: 2,
+                  slidesToScroll: 2,
+                  infinite: true,
+                  dots: false,
+                  variableWidth: false,
+                  centerMode: false,
+                }
+            },
+            {
+                breakpoint: 480,
+                settings: {
+                  slidesToShow: 1,
+                  slidesToScroll: 1,
+                  variableWidth: false,
+                  centerMode: false,
+                }
+            }
+            ]
+        });
+    });
+    </script>
+      
+      
 </body>
 
 </html>
