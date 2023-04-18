@@ -137,15 +137,21 @@ body {
 
 @media (min-height: 768px) {
     .content-container {
-        top: calc(50% + 2.5rem);
-        height: calc(100% - 5rem - 5rem);
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        height: calc(100% - 5rem - 5rem - 2.5rem);
     }
 }
 
 @media (max-height: 767px) {
     .content-container {
-        top: 5rem;
-        height: calc(100% - 5rem - 5rem);
+        position: absolute;
+        top: 6.5rem;
+        left: 50%;
+        transform: translateX(-50%);
+        height: calc(100% - 5rem - 5rem -rem);
     }
 }
 
