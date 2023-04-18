@@ -34,6 +34,7 @@ body {
     background: linear-gradient(-45deg, #ff3981, #ffafcc, #23a6d5, #23d5ab); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */  
     background-size: 400% 400%;
     animation: gradient 10s ease infinite;
+    overflow-x: hidden;
 }
 
 @keyframes gradient {
@@ -50,17 +51,121 @@ body {
     }
 }
 
-.container {
+.bg-blur {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.navbar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 5rem;
+    background-color: #BDE0FE;
+    border: 4px solid #CDB4DB;
+    box-shadow: 0px 0px 15px rgba(255, 200, 221, 0.75);
+    z-index: 2;
+    box-sizing: border-box;
+}
+
+.navbar-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+    padding: 0 1rem;
+}
+
+.navbar-container .navbar-left {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-container .navbar-left .navbar-logo {
+    width: 4rem;
+    height: 4rem;
+    margin-right: 1rem;
+}
+
+.navbar-container .navbar-left .navbar-logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.navbar-container .navbar-right {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-container .navbar-right .navbar-item {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.5rem;
+    color: #23a6d5;
+    margin-left: 1rem;
+    text-decoration: none;
+}
+
+.content-box {
+    position: absolute; /* positions the content box relative to the container */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* centers the box */
+    width: 80%;
+    height: auto;
+    max-height: 50%;
+    max-width: 50%;
+    padding: 0.5rem 3rem 0.5rem 3rem;
+    background-color: #BDE0FE;
+    border: 4px solid #CDB4DB;
+    border-radius: 15px;
+    box-shadow: 0px 0px 15px rgba(255, 200, 221, 0.75);
+    z-index: 2;
+  }
+
+.content-box h1 {
+    font-family: 'Arbutus Slab', serif;
+    font-size: 3rem;
+    text-align: center;
+    margin-top: 0.5rem;
+    margin-bottom: -0.5rem;
+}
+
+.content-box p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.5rem;
+    text-align: center;
+    margin-bottom: 1rem;
+    color: FFAFCC;
+}
+
+.content-box a {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.5rem;
+    text-align: center;
+    margin-bottom: 1rem;
+    color: #23a6d5;
+    text-decoration: none;
+}
+
+.content-box a:hover {
+    color: #ff3981;
+}
+
+.carousel-container {
     width: 100vh;
     height: 100vh;
     display: flex;
     align-items: center; /* Centers vertically */
     justify-content: center; /* Centers horizontally */
-  }
-
-.carousel {
-    background-color: rgba(0, 0, 0, 0.1);
-    padding: 1rem;
+    z-index: 0;
 }
 
 .carousel img {
@@ -77,5 +182,3 @@ body {
 .slick-track {
     display: flex;
 }
-  
-  
