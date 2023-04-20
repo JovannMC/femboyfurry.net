@@ -65,7 +65,7 @@ body {
 }
 
 .bg-blur {
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
@@ -207,13 +207,11 @@ body {
 }
 
 .carousel-container {
+    position: fixed;
+    top: 6%;
     width: 100%;
     height: 100%;
-    display: flex;
-    align-items: center; /* Centers vertically */
-    justify-content: center; /* Centers horizontally */
     z-index: 0;
-    background-color: white;
 }
 
 .carousel img {
