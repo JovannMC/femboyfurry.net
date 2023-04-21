@@ -32,12 +32,11 @@
 }
 
 body {
-    min-height: 100%;
     background: #23a6d5; /* fallback for old browsers */
     background: -webkit-linear-gradient(-45deg, #ff3981, #ffafcc, #23a6d5, #23d5ab); /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(-45deg, #ff3981, #ffafcc, #23a6d5, #23d5ab); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */  
     background-size: 400% 400%;
-    animation: gradient 10s ease infinite;
+    animation: gradient 12s ease infinite;
     overflow-x: hidden;
 }
 
@@ -127,10 +126,10 @@ body {
 */
 
 .content-container {
+    width: 30%;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 50%;
     z-index: 2;
 }
 
@@ -145,14 +144,20 @@ body {
     z-index: 2;
 }
 
-@media (min-height: 768px) {
-    .content-container {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        height: calc(100% - 5rem - 5rem - 2.5rem);
-    }
+.content-box .pfp {
+    width: 40%;
+    height: 40%;
+    margin: 0 auto;
+    margin-bottom: 1rem;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.content-box .pfp img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
 }
 
 .content-box h1 {
@@ -189,7 +194,7 @@ body {
 
 .carousel-container {
     position: fixed;
-    top: 6%;
+    top: 6.5%;
     width: 100%;
     height: 100%;
     z-index: 0;
@@ -217,6 +222,16 @@ body {
         left: 50%;
         transform: translateX(-50%);
         height: calc(100% - 5rem - 5rem -rem);
+    }
+}
+
+@media (min-height: 768px) {
+    .content-container {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        height: calc(100% - 5rem - 5rem - 2.5rem);
     }
 }
 
