@@ -8,10 +8,12 @@
     <title>About</title>
 
     <link rel="stylesheet" href="/static/css/style.css">
+    <link rel="stylesheet" type="text/css" href="/static/css/bulma.css"/>
     <link rel="stylesheet" type="text/css" href="/static/css/slick.css"/>
     <link rel="stylesheet" type="text/css" href="/static/css/slick-theme.css">
     <script src="/static/js/jquery-3.6.4.min.js"></script>
     <script src="/static/js/slick.min.js"></script>
+    <script src="/static/js/navbar-burger.js"></script>
 
     <link rel="icon" type="image/x-icon" href="/static/images/favicon.ico">
 
@@ -31,39 +33,62 @@
 
 <body>
     <div class="bg-blur"></div>
-    <div class="navbar">
-        <div class="navbar-container">
-            <div class="navbar-left">
-                <a href="/" class="navbar-logo">
-                    <img src="/static/images/logo with bg.png">
-                </a>
+
+    <nav class="navbar" role="navigation" style="background-color: #BDE0FE;">
+        <div class="navbar-brand">
+            <div class="navbar-burger" data-target="navbarLinks" style="">
+                <span></span>
+                <span></span>
+                <span></span>
             </div>
-            <div class="navbar-right">
-                <a href="/" class="navbar-item">Home</a>
-                <a href="/about.html" class="navbar-item">About</a>
-                <a href="/projects" class="navbar-item">Projects</a>
-                <a href="/contact.html" class="navbar-item">Contact</a>
+            <a class="navbar-item" href="/">
+                <img src="/static/images/logo with bg.png" style="border-radius: 50%;">
+            </a>
+        </div>
+        <div id="navbarLinks" class="navbar-menu">
+           <div class="navbar-end">
+            <a class="navbar-item" href="/">
+                Home
+            </a>
+            <a class="navbar-item" href="/about.html">
+                About
+            </a>
+            <a class="navbar-item" href="/projects">
+                Projects
+            </a>
+            <a class="navbar-item" href="/contact.html">
+                Contact
+            </a>
             </div>
         </div>
-    </div>
-    <div class="content-container">
-        <div class="content-box">
-            <div class="pfp">
-                <img src="/static/images/pfp.webp">
+    </nav>
+
+    <section class="hero is-fullheight-with-navbar">
+        <div class="hero-body has-text-centered">
+            <div class="container has-text-centered">
+                <div class="box" style="border: 4px solid #CDB4DB;">
+                    <div class="columns">
+                        <div class="column">
+                            <img src="/static/images/pfp.webp" id="pfp" alt="Online profile of JovannMC"/>
+                            <!-- Info -->
+                            <h2 class="title is-1">About</h2>
+                            <p class="subtitle is-4">
+                                Hey, I'm JovannMC! I'm a bisexual 14 year old femboy furry that goes by any pronouns.
+                                I sometimes creates content on <a href="https://youtube.com/@JovannMC" target="_blank">YouTube</a> and manage some projects like a <a href="https://mastodon.femboyfurry.net" target="_blank">Mastodon</a> instance.
+                                You can find some info about my fursona, Jovann, who is based off myself <a href="https://refsheet.net/JovannMC/jovann" target="_blank">here</a>.<br/>
+                                <br/>
+                                I love hanging out with my friends, playing games, sleeping and hanging out in VRChat, and more! I am also dating the lovely <a href="https://soafen.love" target="_blank">soafen</a> <3<br/>
+                                <br/>
+                                I've been interested in tech at a young age and know some programming languages like Java and C# for Spigot plugin and Unity game development respectively.
+                                I created (and abandoned) many <a hred="/projects">projects</a> like bad <a href="/projects/games/">games</a> and plugins for Minecraft servers</a>.<br/>
+                            </p>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <h1>About</h1>
-            <p>
-                Hey, I'm JovannMC! I'm a bisexual 14 year old femboy furry that goes by any pronouns.
-                I sometimes creates content on <a href="https://youtube.com/@JovannMC" target="_blank">YouTube</a> and manage some projects like a <a href="https://mastodon.femboyfurry.net" target="_blank">Mastodon</a> instance.
-                You can find some info about my fursona, Jovann, who is based off myself <a href="https://refsheet.net/JovannMC/jovann" target="_blank">here</a>.<br/>
-                <br/>
-                I love hanging out with my friends, playing games, sleeping and hanging out in VRChat, and more! I am also dating the lovely <a href="https://soafen.love" target="_blank">soafen</a> <3<br/>
-                <br/>
-                I've been interested in tech at a young age and know some programming languages like Java and C# for Spigot plugin and Unity game development respectively.
-                I created (and abandoned) many <a hred="/projects">projects</a> like bad <a href="/projects/games/">games</a> and plugins for Minecraft servers</a>.<br/>
-            </p>
         </div>
-    </div>
+    </section>
+    
     <div class="carousel-container">
         <div class="carousel">
             <div class="column-1">
