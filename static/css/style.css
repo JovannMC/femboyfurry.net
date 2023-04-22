@@ -86,12 +86,6 @@ body {
     font-size: 1.5rem;
 }
 
-.navbar-logo {
-    width: 3rem;
-    height: 3rem;
-    background: url(/static/images/logo.png);
-}
-
 /* 
     Carousel 
 */
