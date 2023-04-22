@@ -8,10 +8,12 @@
     <title>femboyfurry.net</title>
 
     <link rel="stylesheet" href="/static/css/style.css">
+    <link rel="stylesheet" type="text/css" href="/static/css/bulma.css"/>
     <link rel="stylesheet" type="text/css" href="/static/css/slick.css"/>
     <link rel="stylesheet" type="text/css" href="/static/css/slick-theme.css">
     <script src="/static/js/jquery-3.6.4.min.js"></script>
     <script src="/static/js/slick.min.js"></script>
+    <script src="/static/js/navbar-burger.js"></script>
 
     <link rel="icon" type="image/x-icon" href="/static/images/favicon.ico">
 
@@ -31,62 +33,97 @@
 
 <body>
     <div class="bg-blur"></div>
-    <div class="navbar">
-        <div class="navbar-container">
-            <div class="navbar-left">
-                <a href="/" class="navbar-logo">
-                    <img src="/static/images/logo with bg.png">
-                </a>
+
+    <nav class="navbar" role="navigation" style="background-color: #BDE0FE;">
+        <div class="navbar-brand">
+            <div class="navbar-burger" data-target="navbarLinks" style="">
+                <span></span>
+                <span></span>
+                <span></span>
             </div>
-            <div class="navbar-right">
-                <a href="/" class="navbar-item">Home</a>
-                <a href="/about.html" class="navbar-item">About</a>
-                <a href="/projects" class="navbar-item">Projects</a>
-                <a href="/contact.html" class="navbar-item">Contact</a>
+            <a class="navbar-item" href="/">
+                <img src="/static/images/logo with bg.png" style="border-radius: 50%;">
+            </a>
+        </div>
+        <div id="navbarLinks" class="navbar-menu">
+           <div class="navbar-end">
+            <a class="navbar-item" href="/">
+                Home
+            </a>
+            <a class="navbar-item" href="/about.html">
+                About
+            </a>
+            <a class="navbar-item" href="/projects">
+                Projects
+            </a>
+            <a class="navbar-item" href="/contact.html">
+                Contact
+            </a>
             </div>
         </div>
-    </div>
-    <div class="content-container">
-        <div class="content-box">
-            <div class="pfp">
-                <img src="/static/images/pfp.webp">
-            </div>
-            <h1>JovannMC</h1>
-            <p>
-                Hi, I'm your local (dumb) femboy furry!<br/>
-                I'm a bisexual 14 year old that does random stuff, exist on the internet, and hangs out with friends.
-                I go by any pronouns and am dating my lovely <a href="https://soafen.love">soafen</a>.<br/>
-                <br/>
-                I plan to host random stuff with this domain and VPS which you can find on my <a href="/projects">projects</a> page,
-                from a <a href="https://mastodon.femboyfurry.net" target="_blank">Mastodon</a> instance, to random (bad) <a href="/projects" target="_blank">games</a>.<br/>
-                <br/>
-                If you would like to contact me, you can do so on my <a href="/contact">contact</a> page.
-                You can also check out my socials below!
-                <br/>
-                <br/>
-            </p>
-            <div class="socials">
-                <a href="https://discord.gg/fPrjXeN9fe" target="_blank">
-                    <img src="/static/images/socials/discord.svg">
-                </a>
-                <a href="https://youtube.com/@JovannMC" target="_blank">
-                    <img src="/static/images/socials/youtube.svg">
-                </a>
-                <a href="https://twitter.com/JovannMC" target="_blank">
-                    <img src="/static/images/socials/twitter.svg">
-                </a>
-                <a href="https://twitch.tv/jovannmc" target="_blank">
-                    <img src="/static/images/socials/twitch.svg">
-                </a>
-                <a href="https://matrix.to/#/@jovannmc:tchncs.de" target="_blank">
-                    <img src="/static/images/socials/matrix.svg">
-                </a>
-                <a href="https://mastodon.femboyfurry.net/@JovannMC" target="_blank">
-                    <img src="/static/images/socials/mastodon.svg">
-                </a>
+    </nav>
+
+    <section class="hero is-fullheight-with-navbar">
+        <div class="hero-body has-text-centered">
+            <div class="container has-text-centered">
+                <div class="box" style="border: 4px solid #CDB4DB;">
+                    <div class="columns">
+                        <div class="column">
+                            <img src="/static/images/pfp.webp" id="pfp" alt="Online profile of JovannMC"/>
+                            <!-- Info -->
+                            <h2 class="title is-1 is-font-as">JovannMC</h2>
+                            <p class="subtitle is-4">
+                                Hi, I'm your local (dumb) femboy furry!<br/>
+                                I'm a bisexual 14 year old that does random stuff, exist on the internet, and hangs out with friends.
+                                I go by any pronouns and am dating my lovely <a href="https://soafen.love">soafen</a>.<br/>
+                                <br/>
+                                I plan to host random stuff with this domain and VPS which you can find on my <a href="/projects">projects</a> page,
+                                from a <a href="https://mastodon.femboyfurry.net" target="_blank">Mastodon</a> instance, to random (bad) <a href="/projects" target="_blank">games</a>.<br/>
+                                <br/>
+                                If you would like to contact me, you can do so on my <a href="/contact">contact</a> page.
+                                You can also check out my socials below!
+                                <br/>
+                                <br/>
+                            </p>
+                            <div class="socials">
+                                <a href="https://discord.gg/fPrjXeN9fe" target="_blank" class="button is-rounded is-medium">
+                                    <span class="icon">
+                                        <img src="/static/images/socials/discord.svg" alt="Discord">
+                                    </span>
+                                </a>
+                                <a href="https://youtube.com/@JovannMC" target="_blank" class="button is-rounded is-medium">
+                                    <span class="icon">
+                                        <img src="/static/images/socials/youtube.svg" alt="YouTube">
+                                    </span>
+                                </a>
+                                <a href="https://twitter.com/JovannMC" target="_blank" class="button is-rounded is-medium">
+                                    <span class="icon">
+                                        <img src="/static/images/socials/twitter.svg" alt="Twitter">
+                                    </span>
+                                </a>
+                                <a href="https://twitch.tv/jovannmc" target="_blank" class="button is-rounded is-medium">
+                                    <span class="icon">
+                                        <img src="/static/images/socials/twitch.svg" alt="Twitch">
+                                    </span>
+                                </a>
+                                <a href="https://matrix.to/#/@jovannmc:tchncs.de" target="_blank" class="button is-rounded is-medium">
+                                    <span class="icon">
+                                        <img src="/static/images/socials/matrix.svg" alt="Matrix">
+                                    </span>
+                                </a>
+                                <a href="https://mastodon.femboyfurry.net/@JovannMC" target="_blank" class="button is-rounded is-medium">
+                                    <span class="icon">
+                                        <img src="/static/images/socials/mastodon.svg" alt="Mastodon">
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
+    </section>
+    
     <div class="carousel-container">
         <div class="carousel">
             <div class="column-1">

@@ -1,0 +1,37 @@
+@charset "utf-8";
+
+// Set your brand colors
+$purple: #CDB4DB;
+$light-pink: #FFC8DD;
+$pink: #FFAFCC;
+$light-blue: #BDE0FE;
+$dark-blue: #23a6d5;
+
+
+// Update some of Bulma's component variables
+$box-background-color: $light-blue;
+$box-radius: 20px;
+$box-shadow: 0px 0px 20px rgba(255, 200, 221, 0.75);
+
+$navbar-background-color: $light-blue;
+$navbar-item-color: $dark-blue;
+$navbar-item-hover-color: $dark-blue;
+$navbar-item-hover-background-color: $purple;
+
+// Import only what you need from Bulma
+@import "../node_modules/bulma/sass/base/_all.sass";
+@import "../node_modules/bulma/sass/components/navbar.sass";
+@import "../node_modules/bulma/sass/elements/box.sass";
+@import "../node_modules/bulma/sass/elements/button.sass";
+@import "../node_modules/bulma/sass/elements/container.sass";
+@import "../node_modules/bulma/sass/elements/content.sass";
+@import "../node_modules/bulma/sass/elements/image.sass";
+@import "../node_modules/bulma/sass/elements/icon.sass";
+@import "../node_modules/bulma/sass/elements/title.sass";
+@import "../node_modules/bulma/sass/grid/_all.sass";
+@import "../node_modules/bulma/sass/helpers/color.sass";
+@import "../node_modules/bulma/sass/helpers/flexbox.sass";
+@import "../node_modules/bulma/sass/helpers/typography.sass";
+@import "../node_modules/bulma/sass/helpers/spacing.sass";
+@import "../node_modules/bulma/sass/layout/hero.sass";
+@import "../node_modules/bulma/sass/utilities/_all.sass";
