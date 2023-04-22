@@ -40,6 +40,14 @@ body {
     margin: auto;
 }
 
+.box a {
+    color: #23a6d5;
+}
+
+.box a:hover {
+    color: #ff3981;
+}
+
 .hero-body {
     z-index: 2;
 }
