@@ -98,6 +98,18 @@
 {
     pointer-events: none;
 }
+.slick-slide video
+{
+    display: block;
+}
+.slick-slide.slick-loading video
+{
+    display: none;
+}
+.slick-slide.dragging video
+{
+    pointer-events: none;
+}
 .slick-initialized .slick-slide
 {
     display: block;

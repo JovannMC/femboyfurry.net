@@ -99,7 +99,6 @@ body {
     translate: 0.8rem 0.25rem;
     width: 2.75rem;
     height: 2.75rem;
-    background: url(/static/images/logo.png);
 }
 
 #statuscafe {
@@ -166,6 +165,13 @@ body {
 }
 
 .carousel img {
+    max-width: auto;
+    max-height: 25vh;
+    object-fit: cover;
+    margin: 1.5rem auto 1.5rem auto;
+}
+
+.carousel video {
     max-width: auto;
     max-height: 25vh;
     object-fit: cover;
