@@ -133,27 +133,42 @@
             </div>
         </div>
     </section>
-    
-    <div class="carousel-container">
-        <div class="carousel">
-            <div class="column">
-                <img src="/static/images/carousel/saladsim1.png">
-                <img src="/static/images/carousel/btop.png">
-                <video src="/static/images/carousel/rylanspin.webm" autoplay loop>
-            </div>
-            <div class="column">
-                <img src="/static/images/carousel/saladsimdiscord.png">
-                <video src="/static/images/carousel/organgrooves.webm" autoplay loop style="width: 44vh; height: auto;"></video>
-                <img src="/static/images/carousel/gif.png">
-                
-            </div>
-            <div class="column">
-                <img src="/static/images/carousel/window xp.png">
-                <img src="/static/images/carousel/saladsim2.png">
-                <img src="/static/images/carousel/hapmii1.png">
-            </div>
-        </div>
+
+    <div class="carousel-container" id="carousel-container">
     </div>
+    
+    <script>
+      // Check if the screen width is greater than 768 pixels (i.e. not a mobile device)
+      if (window.innerWidth > 768) {
+        // Get the carousel container element by its ID
+        var carouselContainer = document.getElementById("carousel-container");
+    
+        // Create the HTML for the carousel
+        var carouselHtml = `
+          <div class="carousel">
+            <div class="column">
+              <img src="/static/images/carousel/saladsim1.png">
+              <img src="/static/images/carousel/btop.png">
+              <video src="/static/images/carousel/rylanspin.webm" autoplay loop>
+            </div>
+            <div class="column">
+              <img src="/static/images/carousel/saladsimdiscord.png">
+              <video src="/static/images/carousel/organgrooves.webm" autoplay loop style="width: 44vh; height: auto;"></video>
+              <img src="/static/images/carousel/gif.png">
+            </div>
+            <div class="column">
+              <img src="/static/images/carousel/window xp.png">
+              <img src="/static/images/carousel/saladsim2.png">
+              <img src="/static/images/carousel/hapmii1.png">
+            </div>
+          </div>
+        `;
+    
+        // Add the carousel HTML to the carousel container element
+        carouselContainer.innerHTML = carouselHtml;
+      }
+    </script>
+    
     
     <script>
     $(document).ready(function(){
