@@ -31,6 +31,11 @@ $navbar-background-color: $light-blue;
 $navbar-item-color: $dark-blue;
 $navbar-item-hover-color: $dark-blue;
 $navbar-item-hover-background-color: $purple;
+$navbar-dropdown-background-color: $light-blue;
+$navbar-dropdown-item-hover-color: $dark-blue;
+$navbar-dropdown-item-hover-background-color: $purple;
+$navbar-dropdown-arrow: $dark-blue;
+$navbar-dropdown-border-top: none;
 
 // Import only what you need from Bulma
 @import "../node_modules/bulma/sass/base/_all.sass";
