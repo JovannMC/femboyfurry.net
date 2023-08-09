@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="TemplateData/style.css">
 	  <link rel="stylesheet" href="/static/css/style.css">
     <link rel="stylesheet" href="/static/css/bulma.css">
+    <script src="/static/js/current-status.js" defer></script>
   </head>
   <body>
     <nav class="navbar" role="navigation">
@@ -17,27 +18,51 @@
               <span></span>
               <span></span>
           </div>
-          <a class="navbar-item" href="/">
+          <a class="navbar-logo" href="/">
               <img src="/static/images/logo with bg.png" style="border-radius: 50%;">
           </a>
-      </div>
-      <div id="navbarLinks" class="navbar-menu">
-         <div class="navbar-end">
-          <a class="navbar-item" href="/">
-              Home
-          </a>
-          <a class="navbar-item" href="/about.html">
-              About
-          </a>
-          <a class="navbar-item" href="/projects">
-              Projects
-          </a>
-          <a class="navbar-item" href="/contact.html">
-              Contact
-          </a>
+          <!-- Desktop -->
+          <div class="is-hidden-touch" id="statuscafe">
+              <div id="statuscafe-username">JS is disabled!</div>
+              <div id="statuscafe-content">or status.cafe is down/blocked</div>
+          </div>
+          <!-- Mobile -->
+          <div class="is-hidden-desktop" id="statuscafe-mobile">
+              <div id="statuscafe-mobile-username">JS is disabled!</div>
+              <div id="statuscafe-mobile-content">or status.cafe is down/blocked</div>
           </div>
       </div>
-    </nav>
+      <div id="navbarLinks" class="navbar-menu">
+          <div class="navbar-end">
+              <a class="navbar-item" href="/">
+                  Home
+              </a>
+              <a class="navbar-item" href="/about.html">
+                  About
+              </a>
+              <a class="navbar-item" href="/contact.html">
+                  Contact
+              </a>
+              <div class="navbar-item has-dropdown is-hoverable">
+                  <a class="navbar-link">
+                      My stuff
+                  </a>
+                  
+                  <div class="navbar-dropdown">
+                      <a class="navbar-item" href="/projects/">
+                          Projects
+                      </a>
+                      <a class="navbar-item" href="https://files.femboyfurry.net">
+                          File Repo
+                      </a>
+                      <a class="navbar-item" href="/videos.html">
+                          Videos
+                      </a>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </nav>
 
     <div id="unity-container" class="unity-desktop">
       <canvas id="unity-canvas" width=960 height=600></canvas>
