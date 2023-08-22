@@ -53,11 +53,11 @@ body {
 }
 
 .box a {
-	color: #23a6d5;
+	color: #ff0661;
 }
 
 .box a:hover {
-	color: #ff3981;
+	color: #23a6d5;
 }
 
 .hero-body {
@@ -70,7 +70,7 @@ body {
 }
 
 .btns .button:hover {
-	border: 2px solid #ff3981;
+	border: 2px solid #ff0661;
 }
 
 .btns a {
