@@ -113,6 +113,10 @@ body {
 	height: 2.75rem;
 }
 
+.navbar-item.current {
+	background-color: #cdb4db;
+}
+
 #statuscafe {
 	position: absolute;
 	left: 50%;
