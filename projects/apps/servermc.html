@@ -10,7 +10,6 @@
     <link rel="stylesheet" href="/static/css/style.css">
     <link rel="stylesheet" type="text/css" href="/static/css/bulma.css"/>
     <link rel="stylesheet" type="text/css" href="/static/css/slick.css"/>
-    <link rel="stylesheet" type="text/css" href="/static/css/slick-theme.css">
     <script src="/static/js/jquery-3.6.4.min.js"></script>
     <script src="/static/js/slick.min.js"></script>
     <script src="/static/js/navbar-burger.js"></script>
@@ -27,7 +26,7 @@
 
     <!-- SEO -->
     <meta name="description" content="This is the site of a dumb femboy furry, JovannMC!">
-    <meta name="keywords" content="JovannMC, website, femboy, furry, furboy, femboy furry">
+    <meta name="keywords" content="JovannMC, website, femboy, furry, furboy, femboy furry, trans, transgender, genderfluid, trans furry, transgender furry">
     <meta name="author" content="JovannMC">
     
     <!-- Open Graph Tags -->
@@ -48,8 +47,8 @@
                 <span></span>
                 <span></span>
             </div>
-            <a class="navbar-logo" href="/">
-                <img src="/static/images/logo with bg.webp" style="border-radius: 50%;">
+            <a class="navbar-logo" aria-label="Go to the home page" href="/" style="translate: 0.5rem 0.15rem; width: 3rem; height: 3rem;">
+                <img src="/static/images/logo with bg.webp" style="border-radius: 50%;" alt="Logo of JovannMC">
             </a>
             <!-- Desktop -->
             <div class="is-hidden-touch" id="statuscafe">
@@ -74,9 +73,9 @@
                     Contact
                 </a>
                 <div class="navbar-item current has-dropdown is-hoverable">
-                    <a class="navbar-link">
+                    <p class="navbar-link">
                         My stuff
-                    </a>
+                    </p>
                     
                     <div class="navbar-dropdown">
                         <a class="navbar-item current" href="/projects/">
@@ -137,19 +136,19 @@
         var carouselHtml = `
           <div class="carousel">
             <div class="column">
-                <img src="/static/images/logo with bg.webp">
-                <img src="/static/images/carousel/dootskyre pixel pfp.png">
-                <img src="/static/images/carousel/mii.webp">
+                <img src="/static/images/logo with bg.webp" alt="Logo of JovannMC">
+                <img src="/static/images/carousel/dootskyre pixel pfp.png" alt="Pixel art profile picture of Jovann with a transgender background">
+                <img src="/static/images/carousel/mii.webp" alt="Jovann's Mii">
             </div>
             <div class="column">
-                <img src="/static/images/carousel/transgender.webp">
-                <img src="/static/images/carousel/S0ULC0MPLEX-Niles tiny.gif">
-                <img src="/static/images/carousel/genderfluid.jpg">
+                <img src="/static/images/carousel/transgender.webp" alt="Transgender pride flag">
+                <img src="/static/images/carousel/S0ULC0MPLEX-Niles tiny.gif" alt="A tiny, bouncy YCH gif of Jovann">
+                <img src="/static/images/carousel/genderfluid.jpg" alt="Genderfluid pride flag">
             </div>
             <div class="column">
-                <img src="/static/images/carousel/jovannspotted.webp">
-                <img src="/static/images/carousel/maxcomms raffle prize 1.webp">
-                <img src="/static/images/carousel/nakudadamiku com 1.webp">
+                <img src="/static/images/carousel/jovannspotted.webp" alt="A meme circling Dexerto's profile picture on Twitter which looks awfully similar to JovannMC's logo. An outer circle shows Jovann. Bottom bold text in Impact font saying "JOVANN SPOTTED"">
+                <img src="/static/images/carousel/maxcomms raffle prize 1.webp" alt="Art showing Jovann sitting on top of a hill, looking at the starry night sky">
+                <img src="/static/images/carousel/nakudadamiku com 1.webp" alt="Art showing Jovann eating a hotdog">
             </div>
           </div>
         `;
