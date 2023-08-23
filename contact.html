@@ -136,12 +136,9 @@
     </div>
     
     <script>
-      // Check if the screen width is greater than 768 pixels (i.e. not a mobile device)
-      if (window.innerWidth > 768) {
-        // Get the carousel container element by its ID
+      if (window.innerWidth > 1023) {
         var carouselContainer = document.getElementById("carousel-container");
     
-        // Create the HTML for the carousel
         var carouselHtml = `
           <div class="carousel">
             <div class="column">
@@ -162,7 +159,6 @@
           </div>
         `;
     
-        // Add the carousel HTML to the carousel container element
         carouselContainer.innerHTML = carouselHtml;
       }
     </script>
