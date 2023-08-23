@@ -53,11 +53,11 @@ body {
 }
 
 .box a {
-	color: #ff0661;
+	color: #f9005d;
 }
 
 .box a:hover {
-	color: #23a6d5;
+	color: #ad0040;
 }
 
 .hero-body {
@@ -70,7 +70,7 @@ body {
 }
 
 .btns .button:hover {
-	border: 2px solid #ff0661;
+	border: 2px solid #f9005d;
 }
 
 .btns a {
@@ -149,6 +149,7 @@ body {
 
 #statuscafe-username a {
 	font-size: 1rem;
+	color: #f9005d
 }
 
 #statuscafe-content {
@@ -173,6 +174,7 @@ body {
 
 #statuscafe-mobile-username a {
 	font-size: 0.7rem;
+	color: #f9005d;
 }
 
 #statuscafe-mobile-content {
