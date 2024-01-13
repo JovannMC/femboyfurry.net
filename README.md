@@ -10,12 +10,8 @@ If you have followed all of them, you can make a pull request [here](https://git
 
 ## License
 
-This project is licensed under the [Unlicense](https:/unlicense.org) License - see the [LICENSE](LICENSE) file for details<br>
-TL;DR - this project is in the public domain; do whatever you want with it!
+This project is licensed under the [MIT](https://opensource.org/license/MIT/) License - see the [LICENSE](LICENSE) file for details<br>
 
 ## Acknowledgments
 
-* [Bulma](https://bulma.io/)
-* [Slick](https://github.com/kenwheeler/slick/)
-* [jQuery](https://jquery.com/)
-* [Google Fonts - Roboto](https://fonts.google.com/specimen/Roboto)
+* [Example](https://femboyfurry.net)
