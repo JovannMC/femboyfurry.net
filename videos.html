@@ -79,6 +79,24 @@
   <body>
     <div class="bg-blur"></div>
 
+    <div id="popupModal" class="modal">
+      <div class="box">
+        <h2 class="title is-3">This site is retired!</h2>
+        <p class="subtitle is-5">
+          This site will no longer be updated and is archived. Please visit my
+          new site for updated info and ways to contact me.<br />
+          <br />
+          Thank you! -JovannMC
+        </p>
+        <div class="buttons">
+          <button id="closeButton" class="button is-danger">Dismiss</button>
+          <a class="button is-primary" href="https://jovann.me"
+            >Visit new site</a
+          >
+        </div>
+      </div>
+    </div>
+
     <nav class="navbar" role="navigation">
       <div class="navbar-brand">
         <div class="navbar-burger" data-target="navbarLinks">
@@ -227,6 +245,21 @@
     </section>
 
     <div class="carousel-container" id="carousel-container"></div>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        var modal = document.getElementById("popupModal");
+        var closeButton = document.getElementById("closeButton");
+
+        setTimeout(function () {
+          modal.style.display = "block";
+        }, 2000);
+
+        closeButton.onclick = function () {
+          modal.style.display = "none";
+        };
+      });
+    </script>
 
     <script>
       if (window.innerWidth > 1023) {
