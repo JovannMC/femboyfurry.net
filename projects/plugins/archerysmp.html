@@ -1,139 +1,190 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en-US">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <title>ArcherySMP</title>
 
-    <link rel="stylesheet" href="/static/css/style.css">
-    <link rel="stylesheet" type="text/css" href="/static/css/bulma.css"/>
-    <link rel="stylesheet" type="text/css" href="/static/css/slick.css"/>
+    <link rel="stylesheet" href="/static/css/style.css" />
+    <link rel="stylesheet" type="text/css" href="/static/css/bulma.css" />
+    <link rel="stylesheet" type="text/css" href="/static/css/slick.css" />
     <script src="/static/js/jquery-3.6.4.min.js"></script>
     <script src="/static/js/slick.min.js"></script>
     <script src="/static/js/navbar-burger.js"></script>
     <script src="/static/js/current-status.js" defer></script>
 
     <!-- Favicons -->
-    <link rel="manifest" href="/site.webmanifest">
-    <link rel="icon" type="image/png" sizes="192x192" href="/static/images/favicons/android-chrome-192x192.png">
-    <link rel="icon" type="image/png" sizes="512x512" href="/static/images/favicons/android-chrome-512x512.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="/static/images/favicons/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/static/images/favicons/favicon-16x16.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/static/images/favicons/favicon-32x32.png">
-    <link rel="icon" type="image/x-icon" href="/static/images/favicons/favicon.ico">
+    <link rel="manifest" href="/site.webmanifest" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="192x192"
+      href="/static/images/favicons/android-chrome-192x192.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="512x512"
+      href="/static/images/favicons/android-chrome-512x512.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/static/images/favicons/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/static/images/favicons/favicon-16x16.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/static/images/favicons/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="/static/images/favicons/favicon.ico"
+    />
 
     <!-- SEO -->
-    <meta name="description" content="This is the site of a dumb femboy furry, JovannMC!">
-    <meta name="keywords" content="JovannMC, website, femboy, furry, furboy, femboy furry, trans, transgender, genderfluid, trans furry, transgender furry">
-    <meta name="author" content="JovannMC">
-    
-    <!-- Open Graph Tags -->
-    <meta content="femboyfurry.net" property="og:title"/>
-    <meta content="This is the site of a dumb femboy furry, JovannMC!" property="og:description"/>
-    <meta content="https://femboyfurry.net" property="og:url"/>
-    <meta content="https://femboyfurry.net/static/images/pfp.webp" property="og:image"/>
-    <meta content="#4069fd" data-react-helmet="true" name="theme-color"/>
-</head>
+    <meta
+      name="description"
+      content="This is the site of a dumb femboy furry, JovannMC!"
+    />
+    <meta
+      name="keywords"
+      content="JovannMC, website, femboy, furry, furboy, femboy furry, trans, transgender, genderfluid, trans furry, transgender furry"
+    />
+    <meta name="author" content="JovannMC" />
 
-<body>
+    <!-- Open Graph Tags -->
+    <meta content="femboyfurry.net" property="og:title" />
+    <meta
+      content="This is the site of a dumb femboy furry, JovannMC!"
+      property="og:description"
+    />
+    <meta content="https://femboyfurry.net" property="og:url" />
+    <meta
+      content="https://femboyfurry.net/static/images/pfp.webp"
+      property="og:image"
+    />
+    <meta content="#4069fd" data-react-helmet="true" name="theme-color" />
+  </head>
+
+  <body>
     <div class="bg-blur"></div>
 
     <nav class="navbar" role="navigation">
-        <div class="navbar-brand">
-            <div class="navbar-burger" data-target="navbarLinks">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-            <a class="navbar-logo" aria-label="Go to the home page" href="/" style="translate: 0.5rem 0.15rem; width: 3rem; height: 3rem;">
-                <img draggable="false" src="/static/images/logo with bg.webp" style="border-radius: 50%;" alt="Logo of JovannMC">
-            </a>
-            <!-- Desktop -->
-            <div class="is-hidden-touch" id="statuscafe">
-                <div id="statuscafe-username">JS is disabled!</div>
-                <div id="statuscafe-content">or status.cafe is down/blocked</div>
-            </div>
-            <!-- Mobile -->
-            <div class="is-hidden-desktop" id="statuscafe-mobile">
-                <div id="statuscafe-mobile-username">JS is disabled!</div>
-                <div id="statuscafe-mobile-content">or status.cafe is down/blocked</div>
-            </div>
+      <div class="navbar-brand">
+        <div class="navbar-burger" data-target="navbarLinks">
+          <span></span>
+          <span></span>
+          <span></span>
         </div>
-        <div id="navbarLinks" class="navbar-menu">
-            <div class="navbar-end">
-                <a class="navbar-item" href="/">
-                    Home
-                </a>
-                <a class="navbar-item" href="/about.html">
-                    About
-                </a>
-                <a class="navbar-item" href="/contact.html">
-                    Contact
-                </a>
-                <div class="navbar-item current has-dropdown is-hoverable" tabindex="0">
-                    <p class="navbar-link">
-                        My stuff
-                    </p>
-                    
-                    <div class="navbar-dropdown">
-                        <a class="navbar-item current" href="/projects/">
-                            Projects
-                        </a>
-                        <a class="navbar-item" href="https://files.femboyfurry.net">
-                            File Repo
-                        </a>
-                        <a class="navbar-item" href="/videos.html">
-                            Videos
-                        </a>
-                    </div>
-                </div>
-            </div>
+        <a
+          class="navbar-logo"
+          aria-label="Go to the home page"
+          href="/"
+          style="translate: 0.5rem 0.15rem; width: 3rem; height: 3rem"
+        >
+          <img
+            draggable="false"
+            src="/static/images/logo with bg.webp"
+            style="border-radius: 50%"
+            alt="Logo of JovannMC"
+          />
+        </a>
+        <!-- Desktop -->
+        <div class="is-hidden-touch" id="statuscafe">
+          <div id="statuscafe-username">JS is disabled!</div>
+          <div id="statuscafe-content">or status.cafe is down/blocked</div>
         </div>
+        <!-- Mobile -->
+        <div class="is-hidden-desktop" id="statuscafe-mobile">
+          <div id="statuscafe-mobile-username">JS is disabled!</div>
+          <div id="statuscafe-mobile-content">
+            or status.cafe is down/blocked
+          </div>
+        </div>
+      </div>
+      <div id="navbarLinks" class="navbar-menu">
+        <div class="navbar-end">
+          <a class="navbar-item" href="/"> Home </a>
+          <a class="navbar-item" href="/about.html"> About </a>
+          <a class="navbar-item" href="/contact.html"> Contact </a>
+          <div
+            class="navbar-item current has-dropdown is-hoverable"
+            tabindex="0"
+          >
+            <p class="navbar-link">My stuff</p>
+
+            <div class="navbar-dropdown">
+              <a class="navbar-item current" href="/projects/"> Projects </a>
+              <a class="navbar-item" href="https://files.femboyfurry.net">
+                File Repo
+              </a>
+              <a class="navbar-item" href="/videos.html"> Videos </a>
+            </div>
+          </div>
+        </div>
+      </div>
     </nav>
 
     <section class="hero is-fullheight-with-navbar">
-        <div class="hero-body has-text-centered">
-            <div class="container has-text-centered">
-                <div class="box" style="border: 4px solid #CDB4DB;">
-                    <div class="columns">
-                        <div class="column">
-                            <!-- Info -->
-                            <h2 class="title is-1">ArcherySMP</h2>
-                            <p class="subtitle is-4">
-                                A free commission.<br>
-                                <br>
-                                My first Minecraft plugin commission, which is a plugin for the ArcherySMP Minecraft server.<br>
-                                <br>
-                                "A plugin for the ArcherySMP containing archers and hunters with a few abilities, tailored exactly to the requests.<br>
-                                <br>
-                                Archers receive a powerful bow that shoots a "super arrow" when left clicking, and gives you "strength" when right clicking.<br>
-                                Hunters receive a powerful crossbow that poisons surrounding players when left clicking."<br>
-                                <br>
-                                <b>Tested versions:</b> 1.20-1.20.1<br>
-                                <b>Native version:</b> 1.20<br>
-                                <b>License:</b> <a href="https://opensource.org/license/mit/">MIT</a>
-                            </p>
-                            <div class="btns">
-                                <a href="https://l.femboyfurry.net/plugin/archerysmp" target="_blank" class="button is-rounded is-medium">
-                                    <p>GitHub</p>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
+      <div class="hero-body has-text-centered">
+        <div class="container has-text-centered">
+          <div class="box" style="border: 4px solid #cdb4db">
+            <div class="columns">
+              <div class="column">
+                <!-- Info -->
+                <h2 class="title is-1">ArcherySMP</h2>
+                <p class="subtitle is-4">
+                  A free commission.<br />
+                  <br />
+                  My first Minecraft plugin commission, which is a plugin for
+                  the ArcherySMP Minecraft server.<br />
+                  <br />
+                  "A plugin for the ArcherySMP containing archers and hunters
+                  with a few abilities, tailored exactly to the requests.<br />
+                  <br />
+                  Archers receive a powerful bow that shoots a "super arrow"
+                  when left clicking, and gives you "strength" when right
+                  clicking.<br />
+                  Hunters receive a powerful crossbow that poisons surrounding
+                  players when left clicking."<br />
+                  <br />
+                  <b>Tested versions:</b> 1.20-1.20.1<br />
+                  <b>Native version:</b> 1.20<br />
+                  <b>License:</b>
+                  <a href="https://opensource.org/license/mit/">MIT</a>
+                </p>
+                <div class="btns">
+                  <a
+                    href="https://l.femboyfurry.net/plugin/archerysmp"
+                    target="_blank"
+                    class="button is-rounded is-medium"
+                  >
+                    <p>GitHub</p>
+                  </a>
                 </div>
+              </div>
             </div>
+          </div>
         </div>
+      </div>
     </section>
 
-    <div class="carousel-container" id="carousel-container">
-    </div>
-    
+    <div class="carousel-container" id="carousel-container"></div>
+
     <script>
       if (window.innerWidth > 1023) {
         var carouselContainer = document.getElementById("carousel-container");
-    
+
         var carouselHtml = `
           <div class="carousel">
             <div class="column">
@@ -153,58 +204,56 @@
             </div>
           </div>
         `;
-    
+
         carouselContainer.innerHTML = carouselHtml;
       }
     </script>
-    
-    
+
     <script>
-    $(document).ready(function(){
-            $('.carousel').slick({
-            slidesToShow: 1,
-            slidesToScroll: 1,
-            arrows: false,
-            dots: false,
-            centerMode: true,
-            centerPadding: '0',
-            variableWidth: true,
-            speed: 3000,
-            autoplay: true,
-            autoplaySpeed: 0,
-            cssEase: 'linear',
-            pauseOnFocus: false,
-            pauseOnHover: false,
-            useTransform: true,
-            infinite: true,
-            initialSlide: 0,
-            swipe: false,
-            draggable: false,
-            responsive: [
+      $(document).ready(function () {
+        $(".carousel").slick({
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          arrows: false,
+          dots: false,
+          centerMode: true,
+          centerPadding: "0",
+          variableWidth: true,
+          speed: 3000,
+          autoplay: true,
+          autoplaySpeed: 0,
+          cssEase: "linear",
+          pauseOnFocus: false,
+          pauseOnHover: false,
+          useTransform: true,
+          infinite: true,
+          initialSlide: 0,
+          swipe: false,
+          draggable: false,
+          responsive: [
             {
-                breakpoint: 768,
-                settings: {
-                  slidesToShow: 2,
-                  slidesToScroll: 2,
-                  infinite: true,
-                  dots: false,
-                  variableWidth: false,
-                  centerMode: false,
-                }
+              breakpoint: 768,
+              settings: {
+                slidesToShow: 2,
+                slidesToScroll: 2,
+                infinite: true,
+                dots: false,
+                variableWidth: false,
+                centerMode: false,
+              },
             },
             {
-                breakpoint: 480,
-                settings: {
-                  slidesToShow: 1,
-                  slidesToScroll: 1,
-                  variableWidth: false,
-                  centerMode: false,
-                }
-            }
-            ]
+              breakpoint: 480,
+              settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                variableWidth: false,
+                centerMode: false,
+              },
+            },
+          ],
         });
-    });
+      });
     </script>
-</body>
-
+  </body>
 </html>

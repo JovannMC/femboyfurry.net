@@ -1,15 +1,14 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en-US">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <title>Projects</title>
 
-    <link rel="stylesheet" href="/static/css/style.css">
-    <link rel="stylesheet" type="text/css" href="/static/css/bulma.css"/>
-    <link rel="stylesheet" type="text/css" href="/static/css/slick.css"/>
+    <link rel="stylesheet" href="/static/css/style.css" />
+    <link rel="stylesheet" type="text/css" href="/static/css/bulma.css" />
+    <link rel="stylesheet" type="text/css" href="/static/css/slick.css" />
     <script src="/static/js/jquery-3.6.4.min.js"></script>
     <script src="/static/js/slick.min.js"></script>
     <script src="/static/js/navbar-burger.js"></script>
@@ -17,353 +16,531 @@
     <script src="/static/js/dropdown.js" defer></script>
 
     <!-- Favicons -->
-    <link rel="manifest" href="/site.webmanifest">
-    <link rel="icon" type="image/png" sizes="192x192" href="/static/images/favicons/android-chrome-192x192.png">
-    <link rel="icon" type="image/png" sizes="512x512" href="/static/images/favicons/android-chrome-512x512.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="/static/images/favicons/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/static/images/favicons/favicon-16x16.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/static/images/favicons/favicon-32x32.png">
-    <link rel="icon" type="image/x-icon" href="/static/images/favicons/favicon.ico">
+    <link rel="manifest" href="/site.webmanifest" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="192x192"
+      href="/static/images/favicons/android-chrome-192x192.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="512x512"
+      href="/static/images/favicons/android-chrome-512x512.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/static/images/favicons/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/static/images/favicons/favicon-16x16.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/static/images/favicons/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="/static/images/favicons/favicon.ico"
+    />
 
     <!-- SEO -->
-    <meta name="description" content="This is the site of a dumb femboy furry, JovannMC!">
-    <meta name="keywords" content="JovannMC, website, femboy, furry, furboy, femboy furry, trans, transgender, genderfluid, trans furry, transgender furry">
-    <meta name="author" content="JovannMC">
-    
-    <!-- Open Graph Tags -->
-    <meta content="femboyfurry.net" property="og:title"/>
-    <meta content="This is the site of a dumb femboy furry, JovannMC!" property="og:description"/>
-    <meta content="https://femboyfurry.net" property="og:url"/>
-    <meta content="https://femboyfurry.net/static/images/pfp.webp" property="og:image"/>
-    <meta content="#4069fd" data-react-helmet="true" name="theme-color"/>
-</head>
+    <meta
+      name="description"
+      content="This is the site of a dumb femboy furry, JovannMC!"
+    />
+    <meta
+      name="keywords"
+      content="JovannMC, website, femboy, furry, furboy, femboy furry, trans, transgender, genderfluid, trans furry, transgender furry"
+    />
+    <meta name="author" content="JovannMC" />
 
-<body>
+    <!-- Open Graph Tags -->
+    <meta content="femboyfurry.net" property="og:title" />
+    <meta
+      content="This is the site of a dumb femboy furry, JovannMC!"
+      property="og:description"
+    />
+    <meta content="https://femboyfurry.net" property="og:url" />
+    <meta
+      content="https://femboyfurry.net/static/images/pfp.webp"
+      property="og:image"
+    />
+    <meta content="#4069fd" data-react-helmet="true" name="theme-color" />
+  </head>
+
+  <body>
     <div class="bg-blur"></div>
 
     <nav class="navbar" role="navigation">
-        <div class="navbar-brand">
-            <div class="navbar-burger" data-target="navbarLinks">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-            <a class="navbar-logo" aria-label="Go to the home page" href="/" style="translate: 0.5rem 0.15rem; width: 3rem; height: 3rem;">
-                <img draggable="false" src="/static/images/logo with bg.webp" style="border-radius: 50%;" alt="Logo of JovannMC">
-            </a>
-            <!-- Desktop -->
-            <div class="is-hidden-touch" id="statuscafe">
-                <div id="statuscafe-username">JS is disabled!</div>
-                <div id="statuscafe-content">or status.cafe is down/blocked</div>
-            </div>
-            <!-- Mobile -->
-            <div class="is-hidden-desktop" id="statuscafe-mobile">
-                <div id="statuscafe-mobile-username">JS is disabled!</div>
-                <div id="statuscafe-mobile-content">or status.cafe is down/blocked</div>
-            </div>
+      <div class="navbar-brand">
+        <div class="navbar-burger" data-target="navbarLinks">
+          <span></span>
+          <span></span>
+          <span></span>
         </div>
-        <div id="navbarLinks" class="navbar-menu">
-            <div class="navbar-end">
-                <a class="navbar-item" href="/">
-                    Home
-                </a>
-                <a class="navbar-item" href="/about.html">
-                    About
-                </a>
-                <a class="navbar-item" href="/contact.html">
-                    Contact
-                </a>
-                <div class="navbar-item current has-dropdown is-hoverable" tabindex="0">
-                    <p class="navbar-link">
-                        My stuff
-                    </p>
-                    
-                    <div class="navbar-dropdown">
-                        <a class="navbar-item current" href="/projects/">
-                            Projects
-                        </a>
-                        <a class="navbar-item" href="https://files.femboyfurry.net">
-                            File Repo
-                        </a>
-                        <a class="navbar-item" href="/videos.html">
-                            Videos
-                        </a>
-                    </div>
-                </div>
-            </div>
+        <a
+          class="navbar-logo"
+          aria-label="Go to the home page"
+          href="/"
+          style="translate: 0.5rem 0.15rem; width: 3rem; height: 3rem"
+        >
+          <img
+            draggable="false"
+            src="/static/images/logo with bg.webp"
+            style="border-radius: 50%"
+            alt="Logo of JovannMC"
+          />
+        </a>
+        <!-- Desktop -->
+        <div class="is-hidden-touch" id="statuscafe">
+          <div id="statuscafe-username">JS is disabled!</div>
+          <div id="statuscafe-content">or status.cafe is down/blocked</div>
         </div>
+        <!-- Mobile -->
+        <div class="is-hidden-desktop" id="statuscafe-mobile">
+          <div id="statuscafe-mobile-username">JS is disabled!</div>
+          <div id="statuscafe-mobile-content">
+            or status.cafe is down/blocked
+          </div>
+        </div>
+      </div>
+      <div id="navbarLinks" class="navbar-menu">
+        <div class="navbar-end">
+          <a class="navbar-item" href="/"> Home </a>
+          <a class="navbar-item" href="/about.html"> About </a>
+          <a class="navbar-item" href="/contact.html"> Contact </a>
+          <div
+            class="navbar-item current has-dropdown is-hoverable"
+            tabindex="0"
+          >
+            <p class="navbar-link">My stuff</p>
+
+            <div class="navbar-dropdown">
+              <a class="navbar-item current" href="/projects/"> Projects </a>
+              <a class="navbar-item" href="https://files.femboyfurry.net">
+                File Repo
+              </a>
+              <a class="navbar-item" href="/videos.html"> Videos </a>
+            </div>
+          </div>
+        </div>
+      </div>
     </nav>
 
     <section class="hero is-fullheight-with-navbar">
-        <div class="hero-body has-text-centered">
-            <div class="container has-text-centered">
-                <div class="box" style="border: 4px solid #CDB4DB;">
-                    <div class="columns">
-                        <div class="column">
-                            <img draggable="false" src="/static/images/pfp.webp" id="image" alt="Head shot art profile picture of Jovann" draggable="false"/>
-                            <!-- Info -->
-                            <h2 class="title is-1">Projects</h2>
-                            <p class="subtitle is-4">
-                                I've worked on a range of projects, most being open source. Here they are!<br>
-                            </p>
+      <div class="hero-body has-text-centered">
+        <div class="container has-text-centered">
+          <div class="box" style="border: 4px solid #cdb4db">
+            <div class="columns">
+              <div class="column">
+                <img
+                  draggable="false"
+                  src="/static/images/pfp.webp"
+                  id="image"
+                  alt="Head shot art profile picture of Jovann"
+                  draggable="false"
+                />
+                <!-- Info -->
+                <h2 class="title is-1">Projects</h2>
+                <p class="subtitle is-4">
+                  I've worked on a range of projects, most being open source.
+                  Here they are!<br />
+                </p>
 
-                            <!-- Apps Category -->
-                            <div class="box category apps" style="border: 4px solid #CDB4DB;">
-                                <div class="title is-3" style="display: flex; justify-content: center; align-items: center; gap: 1rem;">
-                                    <span>Apps/Hosted</span>
-                                    <span class="dropdown-arrow">&#9662;</span>
-                                </div>
-                                <div class="column project-hidden">
-                                    <a href="https://mastodon.femboyfurry.net">
-                                        <div class="box" style="border: 4px solid #CDB4DB;">
-                                            <figure class="image is-clickable" style="margin: auto;">
-                                                <img draggable="false" src="/static/images/socials/mastodon.svg" alt="Mastodon" title="Mastodon">
-                                            </figure>
-                                            <br>
-                                            <h2 class="title">Mastodon</h2>
-                                            <p class="subtitle is-5">
-                                                The mastodon instance with the funny domain - @username@femboyfurry.net<br>
-                                                <br>
-                                                Status: Active
-                                            </p>
-                                        </div>
-                                    </a>
-                                    <br>
-                                    <a href="https://vid.femboyfurry.net">
-                                        <div class="box" style="border: 4px solid #CDB4DB;">
-                                            <figure class="image is-clickable" style="margin: auto;">
-                                                <img draggable="false" src="/static/images/socials/peertube.svg" alt="PeerTube" title="PeerTube" style="margin: auto; max-width: 6rem; max-height: 6rem;">
-                                            </figure>
-                                            <br>
-                                            <h2 class="title">FurryFlix</h2>
-                                            <p class="subtitle is-5">
-                                                FurryFlix, another PeerTube instance for the furries.<br>
-                                                <br>
-                                                Status: Active
-                                            </p>
-                                        </div>
-                                    </a>
-                                    <br>
-                                    <a href="https://upload.femboyfurry.net">
-                                        <div class="box" style="border: 4px solid #CDB4DB;">
-                                            <figure class="image is-clickable" style="margin: auto;">
-                                                <img draggable="false" src="/static/images/socials/zipline.svg" alt="Zipline" title="Zipline" style="margin: auto; max-width: 6rem; max-height: 6rem;">
-                                            </figure>
-                                            <br>
-                                            <h2 class="title">Pixafur</h2>
-                                            <p class="subtitle is-5">
-                                                Pixafur, the furries' image host powered by Zipline<br>
-                                                <br>
-                                                Status: Active
-                                            </p>
-                                        </div>
-                                    </a>
-                                    <br>
-                                    <a href="https://status.femboyfurry.net">
-                                        <div class="box" style="border: 4px solid #CDB4DB;">
-                                            <figure class="image is-clickable" style="margin: auto;">
-                                                <img draggable="false" src="/static/images/socials/uptimekuma.svg" alt="Uptume Kuma" title="Uptume Kuma" style="margin: auto; max-width: 6rem; max-height: 6rem;">
-                                            </figure>
-                                            <br>
-                                            <h2 class="title">Status page</h2>
-                                            <p class="subtitle is-5">
-                                                The status page for the services hosted for femboyfurry.net<br>
-                                                <br>
-                                                Status: Active
-                                            </p>
-                                        </div>
-                                    </a>
-                                    <br>
-                                    <a href="/projects/apps/servermc.html">
-                                        <div class="box" style="border: 4px solid #CDB4DB;">
-                                            <h2 class="title">ServerMC</h2>
-                                                <p class="subtitle is-5">
-                                                    Like MultiMC, but for Minecraft server instances!<br>
-                                                    <br>
-                                                    Status: On hold
-                                                </p>
-                                        </div>
-                                    </a>
-                                </div>
-                            </div>
-                            <!-- End of Apps Category -->
-
-                             <!-- MC Plugins Category -->
-                             <div class="box category games" style="border: 4px solid #CDB4DB;">
-                                <div class="title is-3" style="display: flex; justify-content: center; align-items: center; gap: 1rem;">
-                                    <span>Minecraft Plugins</span>
-                                    <span class="dropdown-arrow">&#9662;</span>
-                                </div>
-                                <div class="column project-hidden">
-                                    <a href="/projects/plugins/mentionchat.html">
-                                        <div class="box" style="border: 4px solid #CDB4DB;">
-                                            <h2 class="title">MentionChat</h2>
-                                            <p class="subtitle is-5">
-                                                A simple plugin to mention other players in chat!<br>
-                                            <br>
-                                                Status: Active
-                                            </p>
-                                        </div>
-                                    </a>
-                                    <br>
-                                    <a href="/projects/plugins/archerysmp.html">
-                                        <div class="box" style="border: 4px solid #CDB4DB;">
-                                            <h2 class="title">ArcherySMP</h2>
-                                            <p class="subtitle is-5">
-                                                Plugin commission 1 - ArcherySMP<br>
-                                            <br>
-                                                Status: Completed
-                                            </p>
-                                        </div>
-                                    </a>
-                                    <br>
-                                    <a href="/projects/plugins/islandturfs.html">
-                                        <div class="box" style="border: 4px solid #CDB4DB;">
-                                            <h2 class="title">IslandTurfs</h2>
-                                            <p class="subtitle is-5">
-                                                A custom plugin made for a friend's server, Protocraft<br>
-                                            <br>
-                                                Status: Completed
-                                            </p>
-                                        </div>
-                                    </a>
-                                    <br>
-                                    <a href="/projects/plugins/justfly.html">
-                                        <div class="box" style="border: 4px solid #CDB4DB;">
-                                            <h2 class="title">JustFly</h2>
-                                            <p class="subtitle is-5">
-                                                Yet another flight plugin, very original<br>
-                                            <br>
-                                                Status: Abandoned
-                                            </p>
-                                        </div>
-                                    </a>
-                                </div>
-                            </div>
-                            <!-- End of MC Plugins Category -->
-
-                            <!-- Websites Category -->
-                            <div class="box category games" style="border: 4px solid #CDB4DB;">
-                                <div class="title is-3" style="display: flex; justify-content: center; align-items: center; gap: 1rem;">
-                                    <span>Websites</span>
-                                    <span class="dropdown-arrow">&#9662;</span>
-                                </div>
-                                <div class="column project-hidden">
-                                    <a href="/projects/websites/dootskyre.html">
-                                        <div class="box" style="border: 4px solid #CDB4DB;">
-                                            <figure class="image is-clickable" style="margin: auto; max-width: 6rem; max-height: 6rem;">
-                                                <img draggable="false" src="/static/images/sky pfp.webp" alt="Pixel art bust profile picture art of Sky" title="Pixel art bust profile picture art of Sky" style="border: solid 4px #CDB4DB; border-radius: 50%;">
-                                            </figure>
-                                            <br>
-                                            <h2 class="title">Sky's portfolio</h2>
-                                            <p class="subtitle is-5">
-                                               Website commission 1 - Sky's portfolio!<br>
-                                            <br>
-                                                Status: Completed
-                                            </p>
-                                        </div>
-                                    </a>
-                                    <br>
-                                    <a href="/projects/websites/thesaucesage.html">
-                                        <div class="box" style="border: 4px solid #CDB4DB;">
-                                            <figure class="image is-clickable" style="margin: auto; max-width: 6rem; max-height: 6rem;">
-                                                <img draggable="false" src="/static/images/thesaucesage.webp" alt="Real life picture of TheSauceSage" title="Real life picture of TheSauceSage" style="border: solid 4px #CDB4DB; border-radius: 50%;">
-                                            </figure>
-                                            <br>
-                                            <h2 class="title">TheSauceSage</h2>
-                                            <p class="subtitle is-5">
-                                               Website commission 2 - TheSauceSage!<br>
-                                            <br>
-                                                Status: Completed
-                                            </p>
-                                        </div>
-                                    </a>
-                                    <br>
-                                    <a href="/projects/websites/femboyfurry.html">
-                                        <div class="box" style="border: 4px solid #CDB4DB;">
-                                            <h2 class="title">femboyfurry.net</h2>
-                                            <p class="subtitle is-5">
-                                                The website you're on!<br>
-                                                <br>
-                                                Status: Active
-                                            </p>
-                                        </div>
-                                    </a>
-                                    <br>
-                                    <a href="/projects/websites/oldfemboyfurry.html">
-                                        <div class="box" style="border: 4px solid #CDB4DB;">
-                                            <h2 class="title">old.femboyfurry.net</h2>
-                                            <p class="subtitle is-5">
-                                               The website you're on, but web 1.0 style!<br>
-                                            <br>
-                                                Status: Active
-                                            </p>
-                                        </div>
-                                    </a>
-                                    <br>
-                                    <a href="https://emily.femboyfurry.net">
-                                        <div class="box" style="border: 4px solid #CDB4DB;">
-                                            <h2 class="title">emily's website :3</h2>
-                                            <p class="subtitle is-5">
-                                                meow :3<br>
-                                            <br>
-                                                Status: Active
-                                            </p>
-                                        </div>
-                                    </a>
-                                </div>             
-                            </div>
-                            <!-- End of Websites Category -->
-
-                            <!-- Games Category -->
-                            <div class="box category games" style="border: 4px solid #CDB4DB;">
-                                <div class="title is-3" style="display: flex; justify-content: center; align-items: center; gap: 1rem;">
-                                    <span>Games</span>
-                                    <span class="dropdown-arrow">&#9662;</span>
-                                </div>
-                                <div class="column project-hidden">
-                                    <a href="/projects/games/saladsimulator">
-                                        <div class="box" style="border: 4px solid #CDB4DB;">
-                                            <figure class="image is-clickable" style="margin: auto; max-width: 6rem; max-height: 6rem;">
-                                                <img draggable="false" src="/static/images/saladsim-logo-transparent.webp" alt="Salad Simulator logo" title="Salad Simulator logo">
-                                            </figure>
-                                            <br>
-                                            <h2 class="title">Salad Simulator</h2>
-                                            <p class="subtitle is-5">
-                                                A (bad) game based off the program that earns you money, Salad<br>
-                                                <br>
-                                                Status: On hold
-                                            </p>
-                                        </div>
-                                    </a>
-                                    <br>
-                                    <a href="/projects/games/saladclicker">
-                                        <div class="box" style="border: 4px solid #CDB4DB;">
-                                            <h2 class="title">Salad Clicker</h2>
-                                            <p class="subtitle is-5">
-                                                A (bad) clicker game.. also based off the program Salad<br>
-                                            <br>
-                                                Status: Abandoned
-                                            </p>
-                                        </div>
-                                    </a>
-                                </div>
-                            </div>
-                            <!-- End of Games Category -->
-                        </div>
-                    </div>
+                <!-- Apps Category -->
+                <div
+                  class="box category apps"
+                  style="border: 4px solid #cdb4db"
+                >
+                  <div
+                    class="title is-3"
+                    style="
+                      display: flex;
+                      justify-content: center;
+                      align-items: center;
+                      gap: 1rem;
+                    "
+                  >
+                    <span>Apps/Hosted</span>
+                    <span class="dropdown-arrow">&#9662;</span>
+                  </div>
+                  <div class="column project-hidden">
+                    <a href="https://mastodon.femboyfurry.net">
+                      <div class="box" style="border: 4px solid #cdb4db">
+                        <figure class="image is-clickable" style="margin: auto">
+                          <img
+                            draggable="false"
+                            src="/static/images/socials/mastodon.svg"
+                            alt="Mastodon"
+                            title="Mastodon"
+                          />
+                        </figure>
+                        <br />
+                        <h2 class="title">Mastodon</h2>
+                        <p class="subtitle is-5">
+                          The mastodon instance with the funny domain -
+                          @username@femboyfurry.net<br />
+                          <br />
+                          Status: Active
+                        </p>
+                      </div>
+                    </a>
+                    <br />
+                    <a href="https://vid.femboyfurry.net">
+                      <div class="box" style="border: 4px solid #cdb4db">
+                        <figure class="image is-clickable" style="margin: auto">
+                          <img
+                            draggable="false"
+                            src="/static/images/socials/peertube.svg"
+                            alt="PeerTube"
+                            title="PeerTube"
+                            style="
+                              margin: auto;
+                              max-width: 6rem;
+                              max-height: 6rem;
+                            "
+                          />
+                        </figure>
+                        <br />
+                        <h2 class="title">FurryFlix</h2>
+                        <p class="subtitle is-5">
+                          FurryFlix, another PeerTube instance for the
+                          furries.<br />
+                          <br />
+                          Status: Active
+                        </p>
+                      </div>
+                    </a>
+                    <br />
+                    <a href="https://upload.femboyfurry.net">
+                      <div class="box" style="border: 4px solid #cdb4db">
+                        <figure class="image is-clickable" style="margin: auto">
+                          <img
+                            draggable="false"
+                            src="/static/images/socials/zipline.svg"
+                            alt="Zipline"
+                            title="Zipline"
+                            style="
+                              margin: auto;
+                              max-width: 6rem;
+                              max-height: 6rem;
+                            "
+                          />
+                        </figure>
+                        <br />
+                        <h2 class="title">Pixafur</h2>
+                        <p class="subtitle is-5">
+                          Pixafur, the furries' image host powered by Zipline<br />
+                          <br />
+                          Status: Active
+                        </p>
+                      </div>
+                    </a>
+                    <br />
+                    <a href="https://status.femboyfurry.net">
+                      <div class="box" style="border: 4px solid #cdb4db">
+                        <figure class="image is-clickable" style="margin: auto">
+                          <img
+                            draggable="false"
+                            src="/static/images/socials/uptimekuma.svg"
+                            alt="Uptume Kuma"
+                            title="Uptume Kuma"
+                            style="
+                              margin: auto;
+                              max-width: 6rem;
+                              max-height: 6rem;
+                            "
+                          />
+                        </figure>
+                        <br />
+                        <h2 class="title">Status page</h2>
+                        <p class="subtitle is-5">
+                          The status page for the services hosted for
+                          femboyfurry.net<br />
+                          <br />
+                          Status: Active
+                        </p>
+                      </div>
+                    </a>
+                    <br />
+                    <a href="/projects/apps/servermc.html">
+                      <div class="box" style="border: 4px solid #cdb4db">
+                        <h2 class="title">ServerMC</h2>
+                        <p class="subtitle is-5">
+                          Like MultiMC, but for Minecraft server instances!<br />
+                          <br />
+                          Status: On hold
+                        </p>
+                      </div>
+                    </a>
+                  </div>
                 </div>
+                <!-- End of Apps Category -->
+
+                <!-- MC Plugins Category -->
+                <div
+                  class="box category games"
+                  style="border: 4px solid #cdb4db"
+                >
+                  <div
+                    class="title is-3"
+                    style="
+                      display: flex;
+                      justify-content: center;
+                      align-items: center;
+                      gap: 1rem;
+                    "
+                  >
+                    <span>Minecraft Plugins</span>
+                    <span class="dropdown-arrow">&#9662;</span>
+                  </div>
+                  <div class="column project-hidden">
+                    <a href="/projects/plugins/mentionchat.html">
+                      <div class="box" style="border: 4px solid #cdb4db">
+                        <h2 class="title">MentionChat</h2>
+                        <p class="subtitle is-5">
+                          A simple plugin to mention other players in chat!<br />
+                          <br />
+                          Status: Active
+                        </p>
+                      </div>
+                    </a>
+                    <br />
+                    <a href="/projects/plugins/archerysmp.html">
+                      <div class="box" style="border: 4px solid #cdb4db">
+                        <h2 class="title">ArcherySMP</h2>
+                        <p class="subtitle is-5">
+                          Plugin commission 1 - ArcherySMP<br />
+                          <br />
+                          Status: Completed
+                        </p>
+                      </div>
+                    </a>
+                    <br />
+                    <a href="/projects/plugins/islandturfs.html">
+                      <div class="box" style="border: 4px solid #cdb4db">
+                        <h2 class="title">IslandTurfs</h2>
+                        <p class="subtitle is-5">
+                          A custom plugin made for a friend's server,
+                          Protocraft<br />
+                          <br />
+                          Status: Completed
+                        </p>
+                      </div>
+                    </a>
+                    <br />
+                    <a href="/projects/plugins/justfly.html">
+                      <div class="box" style="border: 4px solid #cdb4db">
+                        <h2 class="title">JustFly</h2>
+                        <p class="subtitle is-5">
+                          Yet another flight plugin, very original<br />
+                          <br />
+                          Status: Abandoned
+                        </p>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+                <!-- End of MC Plugins Category -->
+
+                <!-- Websites Category -->
+                <div
+                  class="box category games"
+                  style="border: 4px solid #cdb4db"
+                >
+                  <div
+                    class="title is-3"
+                    style="
+                      display: flex;
+                      justify-content: center;
+                      align-items: center;
+                      gap: 1rem;
+                    "
+                  >
+                    <span>Websites</span>
+                    <span class="dropdown-arrow">&#9662;</span>
+                  </div>
+                  <div class="column project-hidden">
+                    <a href="/projects/websites/dootskyre.html">
+                      <div class="box" style="border: 4px solid #cdb4db">
+                        <figure
+                          class="image is-clickable"
+                          style="
+                            margin: auto;
+                            max-width: 6rem;
+                            max-height: 6rem;
+                          "
+                        >
+                          <img
+                            draggable="false"
+                            src="/static/images/sky pfp.webp"
+                            alt="Pixel art bust profile picture art of Sky"
+                            title="Pixel art bust profile picture art of Sky"
+                            style="
+                              border: solid 4px #cdb4db;
+                              border-radius: 50%;
+                            "
+                          />
+                        </figure>
+                        <br />
+                        <h2 class="title">Sky's portfolio</h2>
+                        <p class="subtitle is-5">
+                          Website commission 1 - Sky's portfolio!<br />
+                          <br />
+                          Status: Completed
+                        </p>
+                      </div>
+                    </a>
+                    <br />
+                    <a href="/projects/websites/thesaucesage.html">
+                      <div class="box" style="border: 4px solid #cdb4db">
+                        <figure
+                          class="image is-clickable"
+                          style="
+                            margin: auto;
+                            max-width: 6rem;
+                            max-height: 6rem;
+                          "
+                        >
+                          <img
+                            draggable="false"
+                            src="/static/images/thesaucesage.webp"
+                            alt="Real life picture of TheSauceSage"
+                            title="Real life picture of TheSauceSage"
+                            style="
+                              border: solid 4px #cdb4db;
+                              border-radius: 50%;
+                            "
+                          />
+                        </figure>
+                        <br />
+                        <h2 class="title">TheSauceSage</h2>
+                        <p class="subtitle is-5">
+                          Website commission 2 - TheSauceSage!<br />
+                          <br />
+                          Status: Completed
+                        </p>
+                      </div>
+                    </a>
+                    <br />
+                    <a href="/projects/websites/femboyfurry.html">
+                      <div class="box" style="border: 4px solid #cdb4db">
+                        <h2 class="title">femboyfurry.net</h2>
+                        <p class="subtitle is-5">
+                          The website you're on!<br />
+                          <br />
+                          Status: Active
+                        </p>
+                      </div>
+                    </a>
+                    <br />
+                    <a href="/projects/websites/oldfemboyfurry.html">
+                      <div class="box" style="border: 4px solid #cdb4db">
+                        <h2 class="title">old.femboyfurry.net</h2>
+                        <p class="subtitle is-5">
+                          The website you're on, but web 1.0 style!<br />
+                          <br />
+                          Status: Active
+                        </p>
+                      </div>
+                    </a>
+                    <br />
+                    <a href="https://emily.femboyfurry.net">
+                      <div class="box" style="border: 4px solid #cdb4db">
+                        <h2 class="title">emily's website :3</h2>
+                        <p class="subtitle is-5">
+                          meow :3<br />
+                          <br />
+                          Status: Active
+                        </p>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+                <!-- End of Websites Category -->
+
+                <!-- Games Category -->
+                <div
+                  class="box category games"
+                  style="border: 4px solid #cdb4db"
+                >
+                  <div
+                    class="title is-3"
+                    style="
+                      display: flex;
+                      justify-content: center;
+                      align-items: center;
+                      gap: 1rem;
+                    "
+                  >
+                    <span>Games</span>
+                    <span class="dropdown-arrow">&#9662;</span>
+                  </div>
+                  <div class="column project-hidden">
+                    <a href="/projects/games/saladsimulator">
+                      <div class="box" style="border: 4px solid #cdb4db">
+                        <figure
+                          class="image is-clickable"
+                          style="
+                            margin: auto;
+                            max-width: 6rem;
+                            max-height: 6rem;
+                          "
+                        >
+                          <img
+                            draggable="false"
+                            src="/static/images/saladsim-logo-transparent.webp"
+                            alt="Salad Simulator logo"
+                            title="Salad Simulator logo"
+                          />
+                        </figure>
+                        <br />
+                        <h2 class="title">Salad Simulator</h2>
+                        <p class="subtitle is-5">
+                          A (bad) game based off the program that earns you
+                          money, Salad<br />
+                          <br />
+                          Status: On hold
+                        </p>
+                      </div>
+                    </a>
+                    <br />
+                    <a href="/projects/games/saladclicker">
+                      <div class="box" style="border: 4px solid #cdb4db">
+                        <h2 class="title">Salad Clicker</h2>
+                        <p class="subtitle is-5">
+                          A (bad) clicker game.. also based off the program
+                          Salad<br />
+                          <br />
+                          Status: Abandoned
+                        </p>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+                <!-- End of Games Category -->
+              </div>
             </div>
+          </div>
         </div>
+      </div>
     </section>
 
-    <div class="carousel-container" id="carousel-container">
-    </div>
-    
+    <div class="carousel-container" id="carousel-container"></div>
+
     <script>
       if (window.innerWidth > 1023) {
         var carouselContainer = document.getElementById("carousel-container");
-    
+
         var carouselHtml = `
           <div class="carousel">
             <div class="column">
@@ -383,58 +560,56 @@
             </div>
           </div>
         `;
-    
+
         carouselContainer.innerHTML = carouselHtml;
       }
     </script>
-    
-    
+
     <script>
-    $(document).ready(function(){
-            $('.carousel').slick({
-            slidesToShow: 1,
-            slidesToScroll: 1,
-            arrows: false,
-            dots: false,
-            centerMode: true,
-            centerPadding: '0',
-            variableWidth: true,
-            speed: 3000,
-            autoplay: true,
-            autoplaySpeed: 0,
-            cssEase: 'linear',
-            pauseOnFocus: false,
-            pauseOnHover: false,
-            useTransform: true,
-            infinite: true,
-            initialSlide: 0,
-            swipe: false,
-            draggable: false,
-            responsive: [
+      $(document).ready(function () {
+        $(".carousel").slick({
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          arrows: false,
+          dots: false,
+          centerMode: true,
+          centerPadding: "0",
+          variableWidth: true,
+          speed: 3000,
+          autoplay: true,
+          autoplaySpeed: 0,
+          cssEase: "linear",
+          pauseOnFocus: false,
+          pauseOnHover: false,
+          useTransform: true,
+          infinite: true,
+          initialSlide: 0,
+          swipe: false,
+          draggable: false,
+          responsive: [
             {
-                breakpoint: 768,
-                settings: {
-                  slidesToShow: 2,
-                  slidesToScroll: 2,
-                  infinite: true,
-                  dots: false,
-                  variableWidth: false,
-                  centerMode: false,
-                }
+              breakpoint: 768,
+              settings: {
+                slidesToShow: 2,
+                slidesToScroll: 2,
+                infinite: true,
+                dots: false,
+                variableWidth: false,
+                centerMode: false,
+              },
             },
             {
-                breakpoint: 480,
-                settings: {
-                  slidesToShow: 1,
-                  slidesToScroll: 1,
-                  variableWidth: false,
-                  centerMode: false,
-                }
-            }
-            ]
+              breakpoint: 480,
+              settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                variableWidth: false,
+                centerMode: false,
+              },
+            },
+          ],
         });
-    });
+      });
     </script>
-</body>
-
+  </body>
 </html>
